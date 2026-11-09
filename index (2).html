@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Casamento | Brenda & Robson</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Quicksand"', 'sans-serif'],
+          },
+          colors: {
+            customBg: '#EBF4FF',
+            customBtn: '#81A9D6',
+            customBtnHover: '#9ABDE3',
+            customTitle: '#5D758D',
+            surfaceDark: '#353D44',
+            cardBg: '#FFFFFF',
+            champagne: {
+              100: '#FBF8F2',
+              200: '#F2E9D8',
+              400: '#D4AF37',
+              500: '#C5A880',
+              600: '#A6875C',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #EBF4FF;
+      color: #2D3748;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .hero-font {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #5D758D;
+      border-radius: 9999px;
+    }
+
+    .btn-custom {
+      background-color: #81A9D6;
+      transition: all 0.25s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #9ABDE3;
+      opacity: 0.92;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#81A9D6] selection:text-white" style="background-color: #EBF4FF;">
+
+  <!-- Notification Bar -->
+  <div class="bg-[#DCEBFC] text-[#5D758D] py-2.5 px-4 text-center text-xs tracking-wider uppercase flex items-center justify-center gap-2 border-b border-[#81A9D6]/30 font-semibold">
+    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#81A9D6]"></i>
+    <span>O melhor presente é a sua presença em nosso grande dia!</span>
+    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#81A9D6]"></i>
+  </div>
+
+  <!-- Hero & Monogram Section (Hidden Trigger: 5 clicks on monogram) -->
+  <header class="relative bg-gradient-to-b from-[#E2EFFF] via-[#EBF4FF] to-[#EBF4FF] border-b border-[#81A9D6]/20 overflow-hidden py-14 px-4 sm:px-8 text-center text-stone-700">
+    <div class="absolute inset-0 opacity-[0.06] pointer-events-none bg-[radial-gradient(#81A9D6_1px,transparent_1px)] [background-size:20px_20px]"></div>
+
+    <div class="max-w-3xl mx-auto relative z-10">
+
+      <!-- Bloco Alinhado Centralizado: Monograma, Data e Nomes -->
+      <div class="flex flex-col items-center justify-center text-center">
+        <!-- Delicate Monogram Trigger (Click 5 times or use #painelnoivos) -->
+        <div onclick="handleMonogramClick()" title="Brenda & Robson - Clique para o Painel" class="relative inline-flex items-center justify-center mb-4 cursor-pointer hover:scale-105 active:scale-95 transition-transform duration-300 select-none group mx-auto">
+          <svg viewBox="0 0 260 260" class="w-28 h-28 sm:w-32 sm:h-32 drop-shadow-[0_4px_12px_rgba(93,117,141,0.15)] transition-all duration-300">
+            <g fill="none" stroke="#5D758D" stroke-linecap="round" stroke-linejoin="round">
+
+              <!-- Folhagem superior esquerda -->
+              <g stroke-width="1.3" class="transition-colors duration-300 group-hover:stroke-[#81A9D6]">
+                <path d="M 64 116 C 60 92, 70 70, 102 60" />
+                <path d="M 64 112 C 54 104, 52 90, 56 84 C 62 88, 64 100, 64 112 Z" />
+                <path d="M 60 92 C 48 85, 46 70, 52 64 C 57 70, 60 82, 60 92 Z" />
+                <path d="M 65 74 C 56 64, 58 50, 67 46 C 70 54, 69 66, 65 74 Z" />
+                <path d="M 76 66 C 74 52, 80 40, 90 38 C 91 46, 86 58, 76 66 Z" />
+                <path d="M 94 62 C 98 48, 108 42, 116 46 C 114 54, 104 60, 94 62 Z" />
+                <path d="M 58 87 L 62 102" stroke-width="0.8" opacity="0.6" />
+                <path d="M 54 68 L 58 82" stroke-width="0.8" opacity="0.6" />
+                <path d="M 68 50 L 67 65" stroke-width="0.8" opacity="0.6" />
+                <path d="M 87 42 L 81 56" stroke-width="0.8" opacity="0.6" />
+              </g>
+
+              <!-- Folhagem inferior direita -->
+              <g stroke-width="1.3" class="transition-colors duration-300 group-hover:stroke-[#81A9D6]">
+                <path d="M 196 144 C 200 168, 190 190, 158 200" />
+                <path d="M 196 148 C 206 156, 208 170, 204 176 C 198 172, 196 160, 196 148 Z" />
+                <path d="M 200 168 C 212 175, 214 190, 208 196 C 203 190, 200 178, 200 168 Z" />
+                <path d="M 195 186 C 204 196, 202 210, 193 214 C 190 206, 191 194, 195 186 Z" />
+                <path d="M 184 194 C 186 208, 180 220, 170 222 C 169 214, 174 202, 184 194 Z" />
+                <path d="M 166 198 C 162 212, 152 218, 144 214 C 146 206, 156 200, 166 198 Z" />
+                <path d="M 202 173 L 198 158" stroke-width="0.8" opacity="0.6" />
+                <path d="M 206 192 L 202 178" stroke-width="0.8" opacity="0.6" />
+                <path d="M 192 210 L 193 195" stroke-width="0.8" opacity="0.6" />
+                <path d="M 173 218 L 179 204" stroke-width="0.8" opacity="0.6" />
+              </g>
+
+              <!-- Aro circular elegante -->
+              <path d="M 106 60 A 72 72 0 0 1 202 138" stroke-width="1.8" />
+              <path d="M 154 200 A 72 72 0 0 1 58 122" stroke-width="1.8" />
+
+              <!-- Linha vertical divisória superior -->
+              <line x1="130" y1="96" x2="130" y2="116" stroke-width="1.6" />
+
+              <!-- Linha vertical divisória inferior -->
+              <line x1="130" y1="144" x2="130" y2="164" stroke-width="1.6" />
+            </g>
+
+            <!-- Coração central -->
+            <path d="M 130 134 C 127 131, 122 127, 122 124 C 122 121.5, 124.5 119.5, 127.5 119.5 C 128.8 119.5, 129.8 120.3, 130 121 C 130.2 120.3, 131.2 119.5, 132.5 119.5 C 135.5 119.5, 138 121.5, 138 124 C 138 127, 133 131, 130 134 Z" fill="#5D758D" class="transition-colors duration-300 group-hover:fill-[#81A9D6]" />
+
+            <!-- Letra B -->
+            <text x="100" y="148" text-anchor="middle" font-family="'Cormorant Garamond', 'Cinzel', serif" font-size="58" font-weight="400" fill="#5D758D" class="transition-colors duration-300 group-hover:fill-[#81A9D6]">B</text>
+
+            <!-- Letra R -->
+            <text x="160" y="148" text-anchor="middle" font-family="'Cormorant Garamond', 'Cinzel', serif" font-size="58" font-weight="400" fill="#5D758D" class="transition-colors duration-300 group-hover:fill-[#81A9D6]">R</text>
+          </svg>
+        </div>
+
+        <!-- Data Centralizada -->
+        <div class="flex items-center justify-center gap-3 text-[#5D758D] text-xs font-semibold tracking-widest uppercase mb-2 w-full">
+          <span class="w-10 sm:w-14 h-[1px] bg-[#81A9D6]"></span>
+          <span id="wedding-date-display" class="whitespace-nowrap">07 de Dezembro de 2026</span>
+          <span class="w-10 sm:w-14 h-[1px] bg-[#81A9D6]"></span>
+        </div>
+
+        <!-- Nomes dos Noivos Centralizado -->
+        <h1 id="couple-names-display" class="hero-font text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight my-2 text-center" style="color: #5D758D;">
+          Brenda & Robson
+        </h1>
+      </div>
+
+      <!-- Texto de Boas-vindas -->
+      <p id="welcome-message-display" class="text-stone-600 text-sm sm:text-base max-w-xl mx-auto mt-3 font-normal leading-relaxed text-center">
+        Com muito carinho, preparamos nossa lista de cotas para a construção do nosso lar e da nossa lua de mel. Fique à vontade para nos abençoar com o presente que desejar!
+      </p>
+
+      <!-- Registry Stats -->
+      <div class="mt-6 inline-flex flex-wrap items-center justify-center gap-4 sm:gap-6 bg-white/90 backdrop-blur-sm border border-[#81A9D6]/30 px-6 py-2.5 rounded-full text-xs text-stone-700 shadow-sm font-medium mx-auto">
+        <div class="flex items-center gap-1.5">
+          <i data-lucide="gift" class="w-4 h-4 text-[#81A9D6]"></i>
+          <span><strong class="text-[#5D758D]" id="hero-total-count">50</strong> Opções de Cotas</span>
+        </div>
+        <span class="w-1.5 h-1.5 bg-[#81A9D6] rounded-full"></span>
+        <div class="flex items-center gap-1.5">
+          <i data-lucide="heart-handshake" class="w-4 h-4 text-[#81A9D6]"></i>
+          <span>Cotas Abertas para Presentear</span>
+        </div>
+        <span class="w-1.5 h-1.5 bg-[#81A9D6] rounded-full"></span>
+        <div class="flex items-center gap-1.5">
+          <i data-lucide="shield-check" class="w-4 h-4 text-[#81A9D6]"></i>
+          <span>Pix Direto & Seguro</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter & Search Toolbar -->
+  <section class="sticky top-0 z-30 bg-[#EBF4FF]/95 backdrop-blur-md border-b border-[#81A9D6]/20 shadow-xs py-4 px-4 sm:px-8">
+    <div class="max-w-6xl mx-auto space-y-3">
+      <div class="flex flex-col sm:flex-row gap-3 items-center justify-between">
+
+        <!-- Search bar -->
+        <div class="relative w-full sm:w-80">
+          <i data-lucide="search" class="w-4 h-4 text-[#81A9D6] absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+          <input type="text" id="search-input" oninput="handleSearch(this.value)" placeholder="Buscar presente ou cota..." class="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm bg-white rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6] focus:ring-2 focus:ring-[#81A9D6]/30 transition shadow-inner text-stone-800" />
+        </div>
+
+        <!-- Sort Select -->
+        <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+          <label for="sort-select" class="text-xs text-[#5D758D] font-semibold whitespace-nowrap">Ordenar por:</label>
+          <select id="sort-select" onchange="handleSort(this.value)" class="text-xs sm:text-sm bg-white rounded-xl border border-stone-200 px-3 py-2.5 focus:outline-none focus:border-[#81A9D6] shadow-xs text-stone-800 font-medium">
+            <option value="featured">Relevância / Padrão</option>
+            <option value="price-asc">Menor valor (R$)</option>
+            <option value="price-desc">Maior valor (R$)</option>
+            <option value="name-asc">Ordem alfabética (A - Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Categories Navigation -->
+      <div id="category-filters" class="flex gap-2 overflow-x-auto pb-1 pt-1 custom-scrollbar">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Gift Grid -->
+  <main class="flex-grow max-w-6xl mx-auto w-full px-4 sm:px-8 py-10">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-xs sm:text-sm font-bold tracking-wider uppercase text-[#5D758D]">
+        Opções Disponíveis (<span id="items-count" class="text-[#81A9D6]">50</span>)
+      </h2>
+      <span class="text-xs text-stone-500">Clique em "Presentear" para abrir o QR Code Pix</span>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!-- Cards rendered dynamically -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="hidden text-center py-20 bg-white rounded-3xl border border-dashed border-stone-300 p-8 my-6 shadow-sm">
+      <div class="w-16 h-16 bg-stone-100 text-[#5D758D] rounded-full flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="package-search" class="w-8 h-8"></i>
+      </div>
+      <h3 class="hero-font text-2xl text-[#5D758D] mb-1">Nenhum presente localizado</h3>
+      <p class="text-stone-500 text-sm max-w-md mx-auto mb-6">Tente pesquisar com outra palavra ou selecione a categoria "Todos".</p>
+      <button onclick="resetFilters()" class="px-5 py-2.5 btn-custom text-white rounded-xl text-xs font-semibold">
+        Ver todos os presentes
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[#81A9D6]/20 py-10 px-4 text-center mt-auto text-stone-700 shadow-xs">
+    <div class="max-w-2xl mx-auto space-y-3">
+      <div class="hero-font text-3xl font-semibold" id="footer-couple-name" style="color: #5D758D;">
+        Brenda & Robson
+      </div>
+      <p class="text-stone-500 text-xs sm:text-sm font-normal">
+        Agradecemos imensamente por celebrar este capítulo inesquecível de nossas vidas!
+      </p>
+      <div class="pt-4 border-t border-stone-200 text-[11px] text-stone-400">
+        Lista de Presentes de Casamento &bull; Pagamento 100% Direto aos Noivos via Pix
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: Password Login (Activated via 5 clicks on Monogram, #painelnoivos, or F8) -->
+  <div id="auth-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#23292F]/80 backdrop-blur-sm animate-fadeIn">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full overflow-hidden border border-stone-200 p-6 space-y-4">
+      <div class="text-center">
+        <div class="w-12 h-12 bg-[#81A9D6]/15 text-[#5D758D] rounded-2xl flex items-center justify-center mx-auto mb-3 border border-[#81A9D6]/30">
+          <i data-lucide="lock" class="w-6 h-6"></i>
+        </div>
+        <h3 class="hero-font text-2xl font-bold" style="color: #5D758D;">Painel dos Noivos</h3>
+        <p class="text-xs text-stone-500 mt-1">Acesso exclusivo para os noivos gerenciarem os presentes e informações.</p>
+      </div>
+
+      <div class="space-y-3 pt-2">
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Senha de Acesso</label>
+          <input type="password" id="admin-pass-input" placeholder="Digite sua senha..." onkeydown="if(event.key === 'Enter') checkAdminPassword()" class="w-full p-2.5 rounded-xl border border-stone-300 text-xs focus:outline-none focus:border-[#81A9D6] focus:ring-1 focus:ring-[#81A9D6]" />
+        </div>
+        <p id="auth-error-msg" class="text-red-500 text-[11px] hidden font-medium text-center">Senha incorreta. Tente novamente.</p>
+
+        <div class="text-[11px] text-stone-400 text-center space-y-1">
+          <p>Senha padrão: <strong class="text-stone-700 font-mono bg-stone-100 px-1.5 py-0.5 rounded"></strong></p>
+          <button type="button" onclick="emergencyResetPassword()" class="text-[#5D758D] hover:text-[#81A9D6] underline block mx-auto text-[10px] mt-1 font-medium">
+            Redefinir para padrão
+          </button>
+        </div>
+      </div>
+
+      <div class="flex gap-2 pt-2">
+        <button onclick="closeAuthModal()" class="w-1/2 py-2.5 text-stone-600 rounded-xl hover:bg-stone-100 transition text-xs font-semibold">
+          Cancelar
+        </button>
+        <button onclick="checkAdminPassword()" class="w-1/2 py-2.5 btn-custom text-white rounded-xl text-xs font-semibold shadow-sm flex items-center justify-center gap-1.5">
+          <i data-lucide="key" class="w-3.5 h-3.5 text-white"></i>
+          <span>Entrar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Groom/Bride Admin Panel (Management + HTML Exporter) -->
+  <div id="admin-panel-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#23292F]/80 backdrop-blur-sm animate-fadeIn">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-3xl w-full overflow-hidden border border-stone-200 flex flex-col max-h-[92vh]">
+
+      <!-- Panel Header -->
+      <div class="bg-stone-50 px-6 py-4 border-b border-stone-200 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="p-2.5 rounded-xl text-white" style="background-color: #5D758D;">
+            <i data-lucide="sliders" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="hero-font text-2xl font-bold" style="color: #5D758D;">Painel dos Noivos</h3>
+            <p class="text-[11px] text-[#5D758D] font-medium">Gerenciamento seguro e exportação definitiva</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="logoutAdmin()" class="text-xs text-red-600 hover:text-red-800 font-medium bg-red-50 hover:bg-red-100 px-3 py-1.5 rounded-lg flex items-center gap-1 transition">
+            <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
+            <span>Sair</span>
+          </button>
+          <button onclick="closeAdminPanel()" class="text-stone-400 hover:text-stone-600 p-1.5 rounded-full hover:bg-stone-100">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel Tabs -->
+      <div class="flex border-b border-stone-200 text-xs font-semibold bg-stone-50/50 px-6">
+        <button id="admin-tab-btn-items" onclick="switchAdminTab('items')" class="py-3 px-4 border-b-2 border-[#81A9D6] text-[#5D758D] transition flex items-center gap-1.5">
+          <i data-lucide="list" class="w-4 h-4"></i> Gerenciar Presentes
+        </button>
+        <button id="admin-tab-btn-general" onclick="switchAdminTab('general')" class="py-3 px-4 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition flex items-center gap-1.5">
+          <i data-lucide="info" class="w-4 h-4"></i> Dados do Casal & Pix
+        </button>
+        <button id="admin-tab-btn-publish" onclick="switchAdminTab('publish')" class="py-3 px-4 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition flex items-center gap-1.5">
+          <i data-lucide="download-cloud" class="w-4 h-4 text-emerald-600"></i> Baixar HTML Atualizado
+        </button>
+        <button id="admin-tab-btn-security" onclick="switchAdminTab('security')" class="py-3 px-4 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition flex items-center gap-1.5">
+          <i data-lucide="lock" class="w-4 h-4"></i> Senha
+        </button>
+      </div>
+
+      <!-- Panel Body -->
+      <div class="p-6 overflow-y-auto space-y-6 custom-scrollbar text-stone-700 text-xs">
+
+        <!-- TAB 1: PRESENTES (CRUD) -->
+        <div id="admin-tab-items" class="space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-stone-50 p-3.5 rounded-2xl border border-stone-200">
+            <div>
+              <span class="font-bold text-stone-800 block text-sm">Presentes & Cotas Cadastradas</span>
+              <span class="text-stone-500 text-[11px]">Total: <strong id="admin-item-count">50</strong> opções. Cotas recebidas: <strong id="admin-received-count" class="text-[#5D758D]">0</strong></span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button onclick="openItemModal(null)" class="btn-custom text-white font-semibold px-3 py-2 rounded-xl flex items-center gap-1.5 shadow-sm transition">
+                <i data-lucide="plus-circle" class="w-4 h-4 text-white"></i>
+                <span>Novo Presente</span>
+              </button>
+              <button onclick="resetToDefault50()" class="bg-white border border-stone-200 hover:bg-stone-100 text-stone-700 px-3 py-2 rounded-xl transition flex items-center gap-1">
+                <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+                <span>Restaurar 50 Padrão</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-2xl overflow-hidden">
+            <div class="max-h-80 overflow-y-auto custom-scrollbar divide-y divide-stone-100" id="admin-items-list-container">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: GENERAL & PIX SETTINGS -->
+        <div id="admin-tab-general" class="hidden space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="sm:col-span-2">
+              <label class="block font-semibold text-stone-700 mb-1">Nome dos Noivos</label>
+              <input type="text" id="cfg-couple-name" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]" value="Brenda & Robson">
+            </div>
+
+            <div>
+              <label class="block font-semibold text-stone-700 mb-1">Data do Casamento</label>
+              <input type="text" id="cfg-wedding-date" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]" value="07 de Dezembro de 2026">
+            </div>
+
+            <div>
+              <label class="block font-semibold text-stone-700 mb-1">WhatsApp dos Noivos (com DDD)</label>
+              <input type="text" id="cfg-whatsapp" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]" value="+55 (92) 99400-6646">
+            </div>
+
+            <div class="sm:col-span-2">
+              <label class="block font-semibold text-stone-700 mb-1">Mensagem de Boas-Vindas</label>
+              <textarea id="cfg-welcome-msg" rows="2" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]">Com muito carinho, preparamos nossa lista de cotas para a construção do nosso lar e da nossa lua de mel. Fique à vontade para nos abençoar com o presente que desejar!</textarea>
+            </div>
+
+            <div>
+              <label class="block font-semibold text-stone-700 mb-1">Chave Pix Oficial (E-mail, CPF, Tel ou Aleatória)</label>
+              <input type="text" id="cfg-pix-key" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]" value="dbf68c16-61a0-40bd-8295-b5f32666d790">
+            </div>
+
+            <div>
+              <label class="block font-semibold text-stone-700 mb-1">Nome do Titular do Pix</label>
+              <input type="text" id="cfg-pix-name" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]" value="Brenda Capry dos Santos Nunes">
+            </div>
+          </div>
+
+          <div class="flex justify-end pt-2">
+            <button onclick="saveGeneralConfig()" class="px-5 py-2.5 btn-custom text-white rounded-xl transition font-semibold shadow-sm flex items-center gap-1.5">
+              <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              <span>Salvar Alterações</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB 3: PUBLISH / DOWNLOAD UPDATED HTML -->
+        <div id="admin-tab-publish" class="hidden space-y-4">
+          <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 space-y-2">
+            <h4 class="font-bold text-blue-900 flex items-center gap-2 text-sm">
+              <i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i>
+              Como funciona a segurança e publicação definitiva para todos os convidados?
+            </h4>
+            <p class="text-blue-800 text-[11px] leading-relaxed">
+              <strong>1. Segurança garantida:</strong> Em páginas estáticas sem banco de dados na internet, convidados <strong>nunca conseguem alterar sua chave Pix ou preços para os outros</strong>. Qualquer coisa que alguém tentar alterar pelo navegador fica salva apenas no celular dessa própria pessoa.<br><br>
+              <strong>2. Como publicar para todos:</strong> Depois que você terminar de cadastrar ou editar seus presentes aqui, clique no botão verde abaixo. O sistema gerará um arquivo <code>index.html</code> novo já com todas as suas informações gravadas no código-fonte. Depois, basta subir esse arquivo no seu provedor (como <em>Netlify Drop</em> ou <em>GitHub</em>).
+            </p>
+          </div>
+
+          <div class="p-4 bg-white border border-stone-200 rounded-2xl space-y-3">
+            <span class="block font-bold text-stone-800 text-xs">Ações de Exportação & Publicação:</span>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <button onclick="downloadUpdatedHTMLFile()" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold flex items-center justify-center gap-2 shadow-sm transition">
+                <i data-lucide="download" class="w-4 h-4"></i>
+                <span>Baixar index.html com Dados Atualizados</span>
+              </button>
+              <button onclick="exportDataBackup()" class="w-full py-3 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-xl font-semibold flex items-center justify-center gap-2 transition">
+                <i data-lucide="file-json" class="w-4 h-4"></i>
+                <span>Baixar Backup (.json)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: PASSWORD -->
+        <div id="admin-tab-security" class="hidden space-y-4">
+          <div class="space-y-3 max-w-sm">
+            <div>
+              <label class="block font-semibold text-stone-700 mb-1">Nova Senha</label>
+              <input type="password" id="new-password-input" placeholder="Digite a nova senha..." class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]">
+            </div>
+            <div>
+              <label class="block font-semibold text-stone-700 mb-1">Confirme a Nova Senha</label>
+              <input type="password" id="confirm-password-input" placeholder="Repita a nova senha..." class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]">
+            </div>
+            <button onclick="changeAdminPassword()" class="w-full py-2.5 text-white rounded-xl transition font-semibold shadow-sm flex items-center justify-center gap-2" style="background-color: #5D758D;">
+              <i data-lucide="lock" class="w-3.5 h-3.5 text-white"></i>
+              <span>Atualizar Senha de Acesso</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Panel Footer -->
+      <div class="bg-stone-50 px-6 py-3 border-t border-stone-200 flex justify-between items-center text-xs">
+        <span class="text-stone-400">Painel seguro protegido por hash</span>
+        <button onclick="closeAdminPanel()" class="px-5 py-2 text-stone-600 hover:text-stone-900 rounded-lg hover:bg-stone-200/50 transition font-semibold">
+          Fechar
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL: Create / Edit Single Gift Item -->
+  <div id="item-form-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#23292F]/80 backdrop-blur-sm animate-fadeIn">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden border border-stone-200 p-6 space-y-4">
+      <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+        <h3 id="item-form-title" class="hero-font text-2xl font-bold" style="color: #5D758D;">Novo Presente</h3>
+        <button onclick="closeItemModal()" class="text-stone-400 hover:text-stone-600">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <input type="hidden" id="item-form-id" value="">
+
+      <div class="space-y-3 text-xs">
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Título do Presente</label>
+          <input type="text" id="item-form-name" placeholder="Ex: Cota da Lua de Mel" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]">
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block font-semibold text-stone-700 mb-1">Categoria</label>
+            <select id="item-form-category" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6] bg-white">
+              <option value="Lua de Mel">Lua de Mel</option>
+              <option value="Cozinha">Cozinha</option>
+              <option value="Sala & Conforto">Sala & Conforto</option>
+              <option value="Experiências">Experiências</option>
+              <option value="Grandes Conquistas">Grandes Conquistas</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-stone-700 mb-1">Ícone / Emoji</label>
+            <input type="text" id="item-form-icon" placeholder="Ex: 🥂, ☕, ✈️" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6] text-center text-base" value="🎁">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">URL da Imagem (Opcional - link de foto)</label>
+          <input type="url" id="item-form-image" placeholder="https://exemplo.com/foto.jpg" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Valor da Cota (R$)</label>
+          <input type="number" step="0.01" min="1" id="item-form-price" placeholder="Ex: 150.00" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Descrição</label>
+          <textarea id="item-form-desc" rows="2" placeholder="Explique com carinho como esse presente será aproveitado..." class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]"></textarea>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Cotas já presenteadas / recebidas (Controle interno dos noivos)</label>
+          <input type="number" min="0" id="item-form-received-count" placeholder="0" class="w-full p-2.5 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]" value="0">
+          <span class="text-[10px] text-stone-400 mt-0.5 block">Mesmo com cotas recebidas, o presente continuará 100% aberto e disponível para novos convidados.</span>
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-2 pt-2 border-t border-stone-100">
+        <button onclick="closeItemModal()" class="px-4 py-2 text-stone-600 rounded-xl hover:bg-stone-100 transition text-xs font-semibold">
+          Cancelar
+        </button>
+        <button onclick="saveItemFromModal()" class="px-5 py-2 btn-custom text-white rounded-xl text-xs font-semibold shadow-sm">
+          Salvar Presente
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Guest Checkout (Pix Exclusive) -->
+  <div id="gift-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#23292F]/80 backdrop-blur-sm animate-fadeIn">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden border border-stone-100 flex flex-col max-h-[92vh]">
+
+      <!-- Modal Header -->
+      <div class="bg-stone-50 px-6 py-5 border-b border-stone-200 flex items-start justify-between">
+        <div class="flex items-center gap-3">
+          <div id="modal-item-icon-wrapper" class="relative overflow-hidden w-14 h-14 rounded-2xl bg-white shadow-xs border border-stone-200 flex items-center justify-center shrink-0">
+            <img id="modal-item-image" src="" alt="Presente" class="w-full h-full object-cover hidden" onerror="this.classList.add('hidden'); document.getElementById('modal-item-icon').classList.remove('hidden');" />
+            <span id="modal-item-icon" class="text-3xl">🎁</span>
+          </div>
+          <div>
+            <span id="modal-item-category" class="text-[10px] uppercase font-bold tracking-wider text-[#5D758D] bg-stone-200/80 px-2 py-0.5 rounded-md">
+              Categoria
+            </span>
+            <h3 id="modal-item-title" class="hero-font text-2xl font-bold leading-tight mt-0.5" style="color: #5D758D;">
+              Título do Presente
+            </h3>
+          </div>
+        </div>
+        <button onclick="closeGiftModal()" class="text-stone-400 hover:text-stone-700 p-1.5 rounded-full hover:bg-stone-100 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-6 custom-scrollbar text-stone-700">
+
+        <!-- Value Box -->
+        <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-stone-500 block">Valor sugerido da cota:</span>
+            <span id="modal-item-price" class="text-2xl font-bold hero-font" style="color: #5D758D;">R$ 0,00</span>
+          </div>
+          <span id="modal-item-status-badge" class="text-xs bg-white text-stone-800 font-medium px-3 py-1.5 rounded-full border border-stone-200 flex items-center gap-1.5 shadow-2xs">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Cota Disponível
+          </span>
+        </div>
+
+        <p id="modal-item-description" class="text-xs text-stone-600 italic border-l-2 border-[#81A9D6] pl-3">
+          Descrição do item
+        </p>
+
+        <!-- Seção Exclusiva Pix -->
+        <div class="space-y-4">
+          <div class="flex items-center justify-center gap-1.5 text-xs font-semibold text-[#5D758D] bg-[#DCEBFC]/60 py-2 rounded-xl">
+            <i data-lucide="zap" class="w-4 h-4 text-[#81A9D6]"></i>
+            <span>Pagamento Instantâneo via Pix</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-stone-50 border border-stone-200 rounded-2xl p-5 text-center">
+            <div id="qrcode-container" class="bg-white p-3 rounded-2xl shadow-xs border border-stone-200 mb-3 flex items-center justify-center min-h-[160px] min-w-[160px]">
+              <img id="pix-qr-image" src="" alt="QR Code Pix" class="w-40 h-40 object-contain rounded-lg" />
+            </div>
+            <p class="text-xs text-stone-500 mb-2">Abra o app do seu banco e aponte a câmera ou use a chave abaixo:</p>
+
+            <!-- Chave Pix -->
+            <div class="w-full bg-white border border-stone-200 rounded-xl p-2.5 flex items-center justify-between gap-2 text-xs">
+              <span class="font-mono text-stone-800 truncate" id="modal-pix-key">dbf68c16-61a0-40bd-8295-b5f32666d790</span>
+              <button onclick="copyPixKey()" class="bg-stone-100 hover:bg-[#81A9D6]/20 text-stone-800 px-3 py-1.5 rounded-lg font-medium text-xs whitespace-nowrap transition flex items-center gap-1">
+                <i data-lucide="copy" class="w-3.5 h-3.5 text-[#5D758D]"></i>
+                <span>Copiar Chave</span>
+              </button>
+            </div>
+
+            <!-- Copia e cola -->
+            <div class="w-full mt-2">
+              <button onclick="copyPixCopiaECola()" id="btn-copy-pix-code" class="w-full btn-custom text-white font-medium py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                <span id="btn-copy-code-text">Copiar Código Pix Copia e Cola</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="text-[11px] text-stone-500 text-center font-medium">
+            Titular da Conta: <strong id="modal-pix-owner-name">Brenda Capry dos Santos Nunes</strong>
+          </div>
+        </div>
+
+        <!-- WhatsApp Congratulation -->
+        <div class="border-t border-stone-200 pt-4">
+          <label class="block text-xs font-semibold text-stone-600 mb-1.5 flex items-center gap-1">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-[#81A9D6]"></i>
+            <span>Envie um recadinho carinhoso aos noivos pelo WhatsApp:</span>
+          </label>
+          <textarea id="guest-message" rows="2" placeholder="Deixe sua mensagem de carinho aos noivos..." class="w-full text-xs p-3 rounded-xl border border-stone-200 focus:outline-none focus:border-[#81A9D6]"></textarea>
+          <button onclick="sendCongratulationWhatsApp()" class="mt-2 w-full py-2.5 rounded-xl border border-emerald-300 bg-emerald-50 text-xs text-emerald-800 hover:bg-emerald-100 font-semibold flex items-center justify-center gap-2 transition">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            <span>Avisar aos Noivos pelo WhatsApp</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="bg-stone-50 px-6 py-4 border-t border-stone-200 flex justify-end">
+        <button onclick="closeGiftModal()" class="px-5 py-2 text-xs font-semibold text-stone-600 hover:text-stone-900 rounded-lg hover:bg-stone-200/50 transition">
+          Fechar
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed top-5 right-5 z-50 transform translate-y-[-120%] opacity-0 transition-all duration-300 pointer-events-none bg-[#353D44] text-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2.5 text-xs font-medium border border-white/10">
+    <i data-lucide="check-circle-2" class="w-4 h-4 text-[#81A9D6]"></i>
+    <span id="toast-message">Notificação</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 50 Default Registry Gifts with High-Resolution Photography
+    const initial50Items = [
+      // Lua de Mel
+      { id: 1, title: "Café da Manhã Flutuante na Piscina", category: "Lua de Mel", price: 85, icon: "🥐", image: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=80", desc: "Para acordarmos como reis na lua de mel, com croissants e frutas frescas.", receivedCount: 0 },
+      { id: 2, title: "Almoço pós-casamento", category: "Lua de Mel", price: 150, icon: "🥂", image: "https://images.unsplash.com/photo-1772479020020-9bd8d2f577d0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D", desc: "Um almoço especial para celebrar nosso amor.", receivedCount: 0 },
+      { id: 3, title: "Jantar Romântico para o Casal", category: "Lua de Mel", price: 220, icon: "🕯️", image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80", desc: "Uma noite especial degustando pratos típicos no paraíso.", receivedCount: 0 },
+      { id: 4, title: "Massagem Relaxante para o Casal", category: "Lua de Mel", price: 255, icon: "💆", image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80", desc: "Spa duplo para tirar toda a tensão do pré-casamento.", receivedCount: 0 },
+      { id: 5, title: "Vale Passeio de Barco", category: "Lua de Mel", price: 300, icon: "⛵", image: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80", desc: "Um dia inteiro explorando praias secretas e águas cristalinas.", receivedCount: 0 },
+      { id: 6, title: "Cota da Passagem Aérea (Ida)", category: "Lua de Mel", price: 450, icon: "✈️", image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80", desc: "Ajuda para decolarmos rumo ao melhor destino das nossas vidas.", receivedCount: 0 },
+      { id: 7, title: "Cota da Passagem Aérea (Volta)", category: "Lua de Mel", price: 450, icon: "🛬", image: "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?auto=format&fit=crop&w=600&q=80", desc: "Para voltarmos felizes e cheios de lembranças para casa.", receivedCount: 0 },
+      { id: 8, title: "Passeio de Buggy pelas Dunas", category: "Lua de Mel", price: 190, icon: "🚙", image: "https://images.unsplash.com/photo-1695878868496-fcbd6ef47f57?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Uma aventura inesquecível pelas paisagens e dunas para marcar a nossa viagem.", receivedCount: 0 },
+      { id: 9, title: "Mergulho de Cilindro com Tartarugas", category: "Lua de Mel", price: 360, icon: "🤿", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80", desc: "Para o casal explorar os corais e a vida marinha bem de pertinho.", receivedCount: 0 },
+      { id: 10, title: "Diária em Bangalô Sobre a Água", category: "Lua de Mel", price: 650, icon: "🏝️", image: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=600&q=80", desc: "O verdadeiro sonho da lua de mel: acordar literalmente sobre o mar.", receivedCount: 0 },
+
+      // Cozinha
+      { id: 11, title: "Jogo de Panelas Antiaderentes", category: "Cozinha", price: 280, icon: "🍳", image: "https://images.unsplash.com/photo-1584990347163-2b86b71390d6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D", desc: "Para nada queimar nem grudar nas primeiras aventuras culinárias.", receivedCount: 0 },
+      { id: 12, title: "Cafeteira Espresso & Nespresso", category: "Cozinha", price: 380, icon: "☕", image: "https://images.unsplash.com/photo-1670185534697-e1fdd532c855?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D", desc: "Combustível diário para manter os noivos acordados e dispostos.", receivedCount: 0 },
+      { id: 13, title: "Microondas", category: "Cozinha", price: 470, icon: "🍟", image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Para aquecer nossas refeições e facilitar o dia a dia.", receivedCount: 0 },
+      { id: 14, title: "Conjunto de Facas de Chef", category: "Cozinha", price: 160, icon: "🔪", image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=600&q=80", desc: "Corte profissional para picar cebola sem chorar tanto.", receivedCount: 0 },
+      { id: 15, title: "Liquidificador Potente", category: "Cozinha", price: 170, icon: "🥤", image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=600&q=80", desc: "Para vitaminas, sucos refrescantes e molhos especiais de domingo.", receivedCount: 0 },
+      { id: 16, title: "Aparelho de Jantar Porcelana (30 peças)", category: "Cozinha", price: 390, icon: "🍽️", image: "https://images.unsplash.com/photo-1615865417491-9941019fbc00?auto=format&fit=crop&w=600&q=80", desc: "Para receber os amigos e familiares com elegância e carinho.", receivedCount: 0 },
+      { id: 17, title: "Jogo de Potes Aço Inox 3 Peças", category: "Cozinha", price: 135, icon: "🍴", image: "https://plus.unsplash.com/premium_photo-1664392019866-cd3bceacc3ff?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D", desc: "Organização, elegância e durabilidade para manter nossa cozinha sempre impecável.", receivedCount: 0 },
+      { id: 18, title: "Sanduicheira Grill", category: "Cozinha", price: 130, icon: "🍞", image: "https://plus.unsplash.com/premium_photo-1700581633476-cd2af5a7ba32?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D", desc: "Para salvar os jantares rápidos e deixar nossas noites de lanche ainda mais gostosas.", receivedCount: 0 },
+      { id: 19, title: "Escorredor de Louças Inox", category: "Cozinha", price: 125, icon: "🍷", image: "https://images.unsplash.com/photo-1737681938114-ad51332eec97?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Secar a louça do dia a dia com praticidade e elegância.", receivedCount: 0 },
+      { id: 20, title: "Organizadores para Cozinha Armário", category: "Cozinha", price: 110, icon: "🌰", image: "https://images.unsplash.com/photo-1676907229752-ac14b0152b92?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Aproveitamento inteligente de espaço para manter cada cantinho do armário no lugar.", receivedCount: 0 },
+
+      // Sala & Conforto
+      { id: 21, title: "Cota do Sofá Retrátil Macio", category: "Sala & Conforto", price: 600, icon: "🛋️", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80", desc: "O trono oficial das maratonas de séries e filmes do casal.", receivedCount: 0 },
+      { id: 22, title: "Climatizador de Ar", category: "Sala & Conforto", price: 360, icon: "𖣘", image: "https://images.unsplash.com/photo-1730299789489-b55bf96b22bf?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Ar fresco, umidificado e agradável para manter a casa sempre confortável nos dias mais quentes.", receivedCount: 0 },
+      { id: 23, title: "Persiana Sala", category: "Sala & Conforto", price: 230, icon: "🪟", image: "https://images.unsplash.com/photo-1705234679375-5a372b2a9fd9?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Controle perfeito de luz e privacidade.", receivedCount: 0 },
+      { id: 24, title: "Jogo de Cama 400 Fios Algodão Egípcio", category: "Sala & Conforto", price: 290, icon: "🛏️", image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=600&q=80", desc: "Sensação de cama de hotel de luxo todos os dias da semana.", receivedCount: 0 },
+      { id: 25, title: "Travesseiros Ortopédicos Nuvem", category: "Sala & Conforto", price: 250, icon: "☁️", image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80", desc: "Sono restaurador para nunca acordar com dor na coluna.", receivedCount: 0 },
+      { id: 26, title: "Fechadura Eletrônica Digital", category: "Sala & Conforto", price: 260, icon: "🧶", image: "https://plus.unsplash.com/premium_photo-1729265012673-c6e5e3a29374?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Mais segurança e praticidade.", receivedCount: 0 },
+      { id: 27, title: "Abajur & Luminária Articulada", category: "Sala & Conforto", price: 115, icon: "💡", image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80", desc: "Iluminação aconchegante e intimista para noites tranquilas.", receivedCount: 0 },
+      { id: 28, title: "Difusor de Aromas & Óleos Essenciais", category: "Sala & Conforto", price: 95, icon: "🌿", image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80", desc: "Casa cheirosa com aroma relaxante de lavanda e flor de laranjeira.", receivedCount: 0 },
+      { id: 29, title: "Quadro e Decoração Minimalista", category: "Sala & Conforto", price: 160, icon: "🖼️", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80", desc: "Arte e personalidade para as paredes do nosso novo lar.", receivedCount: 0 },
+      { id: 30, title: "Manta Quentinha para o Sofá", category: "Sala & Conforto", price: 85, icon: "🧣", image: "https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?auto=format&fit=crop&w=600&q=80", desc: "Indispensável para os dias friozinhos assistindo série juntos.", receivedCount: 0 },
+
+      // Experiências
+      { id: 31, title: "Primeiro Ano de Netflix e Pipoca", category: "Experiências", price: 110, icon: "🍿", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=600&q=80", desc: "Para garantir risadas e maratonas nas noites chuvosas.", receivedCount: 0 },
+      { id: 32, title: "Nossa Primeira Noite Casados", category: "Experiências", price: 450, icon: "👩‍❤️‍👨", image: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Para relaxarmos e brindarmos ao início da nossa vida juntos logo após a festa!", receivedCount: 0 },
+      { id: 33, title: "Projeto Casal Fitness", category: "Experiências", price: 320, icon: "🏋️🏋️‍♀️", image: "https://plus.unsplash.com/premium_photo-1661301057249-bd008eebd06a?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Para nos ajudar a queimar os docinhos do casamento e manter o foco na saúde na rotina a dois!", receivedCount: 0 },
+      { id: 34, title: "Piquenique no Parque com Cesta Completa", category: "Experiências", price: 90, icon: "🧺", image: "https://images.unsplash.com/photo-1593034509785-5b17ba49f683?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Frutas, pães e um dia ao ar livre sob a sombra das árvores.", receivedCount: 0 },
+      { id: 35, title: "Ingressos para Show ou Concerto", category: "Experiências", price: 180, icon: "🎟️", image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80", desc: "Uma noite inesquecível curtindo música ao vivo e dançando juntos.", receivedCount: 0 },
+      { id: 36, title: "Trilha com Guia até Cachoeira Secreta", category: "Experiências", price: 130, icon: "🏞️", image: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=600&q=80", desc: "Aventura e conexão com a natureza para renovar as energias.", receivedCount: 0 },
+      { id: 37, title: "Noite de Fondue em Dia Chuvoso", category: "Experiências", price: 160, icon: "🫕", image: "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80", desc: "Chocolate, frutas e queijo derretido para aquecer o coração.", receivedCount: 0 },
+      { id: 38, title: "Sessão Fotográfica Pós-Casamento", category: "Experiências", price: 350, icon: "📸", image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=600&q=80", desc: "Eternizar os primeiros meses da nossa vida a dois.", receivedCount: 0 },
+      { id: 39, title: "Kit Jogos de Tabuleiro para Amigos", category: "Experiências", price: 140, icon: "🎲", image: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80", desc: "Garantia de diversão nas visitas de amigos no final de semana.", receivedCount: 0 },
+      { id: 40, title: "Aluguel de Bicicletas na Orla", category: "Experiências", price: 75, icon: "🚲", image: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80", desc: "Pedalar ao entardecer sentindo a brisa fresca do mar.", receivedCount: 0 },
+
+      // Grandes Conquistas
+      { id: 42, title: "Cota da Máquina Lava e Seca", category: "Grandes Conquistas", price: 200, icon: "🧺", image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Roupas lavadas e secas mesmo nos dias mais chuvosos.", receivedCount: 0 },
+      { id: 43, title: "Cota do Ar-Condicionado Split Inverter", category: "Grandes Conquistas", price: 170, icon: "❄️", image: "https://plus.unsplash.com/premium_photo-1679943423706-570c6462f9a4?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Clima perfeito no quarto durante as noites quentes de verão.", receivedCount: 0 },
+      { id: 45, title: "Cota da Reforma e Pintura da Casa", category: "Grandes Conquistas", price: 220, icon: "🎨", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80", desc: "Tinta fresca, cores acolhedoras e tudo impecável para nós.", receivedCount: 0 },
+      { id: 46, title: "Cota do Forno Elétrico de Embutir", category: "Grandes Conquistas", price: 250, icon: "🍕", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80", desc: "Bolos fofinhos, lasanhas e assados dourados e crocantes.", receivedCount: 0 },
+      { id: 48, title: "Cota Viagem dos Sonhos", category: "Grandes Conquistas", price: 280, icon: "💍", image: "https://plus.unsplash.com/premium_photo-1663054746828-46215eac7298?fm=jpg&q=60&w=3000&auto=format&fit=crop&w=600&q=80", desc: "Colecionando momentos, paisagens incríveis e o início perfeito da nossa história juntos.", receivedCount: 0 }
+    ];
+
+    // State Variables
+    let registryItems = [];
+    let currentCategory = 'all';
+    let searchQuery = '';
+    let sortMode = 'featured';
+    let activeItemForModal = null;
+    let monogramClickCount = 0;
+    let monogramClickTimer = null;
+
+    // Couple Settings
+    let weddingConfig = {
+      coupleName: "Brenda & Robson",
+      weddingDate: "07 de Dezembro de 2026",
+      whatsapp: "+55 (92) 99400-6646",
+      welcomeMsg: "Com muito carinho, preparamos nossa lista de cotas para a construção do nosso lar e da nossa lua de mel. Fique à vontade para nos abençoar com o presente que desejar!",
+      pixKey: "dbf68c16-61a0-40bd-8295-b5f32666d790",
+      pixOwner: "Brenda Capry dos Santos Nunes"
+    };
+
+    // Universal Password System
+    const DEFAULT_PASS = "noivos123";
+
+    function computeSimpleHash(str) {
+      let hash = 0;
+      const salted = "wedding_serenity_" + str;
+      for (let i = 0; i < salted.length; i++) {
+        const char = salted.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash |= 0;
+      }
+      return "h_" + Math.abs(hash);
+    }
+
+    // Gerador de Payload Pix EMVCo (BR Code)
+    function generatePixPayload(key, name, amount) {
+      function formatField(id, value) {
+        const strVal = String(value);
+        const len = new TextEncoder().encode(strVal).length;
+        const lenStr = len < 10 ? '0' + len : String(len);
+        return id + lenStr + strVal;
+      }
+
+      function calcCRC16(str) {
+        let crc = 0xFFFF;
+        const bytes = new TextEncoder().encode(str);
+        for (let i = 0; i < bytes.length; i++) {
+          crc ^= (bytes[i] << 8);
+          for (let j = 0; j < 8; j++) {
+            if ((crc & 0x8000) !== 0) {
+              crc = ((crc << 1) ^ 0x1021) & 0xFFFF;
+            } else {
+              crc = (crc << 1) & 0xFFFF;
+            }
+          }
+        }
+        return crc.toString(16).toUpperCase().padStart(4, '0');
+      }
+
+      const cleanKey = key.trim();
+      const cleanName = (name || "Brenda Robson")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-zA-Z0-9 ]/g, "")
+        .substring(0, 25);
+      const cleanCity = "MANAUS";
+
+      const gui = formatField('00', 'BR.GOV.BCB.PIX');
+      const pixKeyField = formatField('01', cleanKey);
+      const mai = formatField('26', gui + pixKeyField);
+
+      let payload =
+        formatField('00', '01') +
+        formatField('01', '12') +
+        mai +
+        formatField('52', '0000') +
+        formatField('53', '986');
+
+      if (amount && parseFloat(amount) > 0) {
+        payload += formatField('54', parseFloat(amount).toFixed(2));
+      }
+
+      payload +=
+        formatField('58', 'BR') +
+        formatField('59', cleanName) +
+        formatField('60', cleanCity);
+
+      const txidField = formatField('05', '***');
+      payload += formatField('62', txidField);
+
+      payload += '6304';
+      return payload + calcCRC16(payload);
+    }
+
+    // Initialize State
+    function initializeRegistry() {
+      const savedItems = localStorage.getItem('wedding_registry_items_v2');
+      if (savedItems) {
+        try {
+          registryItems = JSON.parse(savedItems);
+        } catch (e) {
+          registryItems = [...initial50Items];
+        }
+      } else {
+        registryItems = [...initial50Items];
+      }
+
+      const savedConfig = localStorage.getItem('wedding_registry_config_v2');
+      if (savedConfig) {
+        try {
+          weddingConfig = { ...weddingConfig, ...JSON.parse(savedConfig) };
+        } catch (e) { }
+      }
+
+      if (!localStorage.getItem('wedding_admin_hash_v2')) {
+        localStorage.setItem('wedding_admin_hash_v2', computeSimpleHash(DEFAULT_PASS));
+      }
+
+      applyConfigToUI();
+      renderCategoryFilters();
+      renderProducts();
+
+      if (window.location.hash === '#painelnoivos') {
+        openAuthModal();
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'F8') {
+          e.preventDefault();
+          openAuthModal();
+        }
+      });
+
+      lucide.createIcons();
+    }
+
+    function applyConfigToUI() {
+      document.getElementById('couple-names-display').textContent = weddingConfig.coupleName;
+      document.getElementById('footer-couple-name').textContent = weddingConfig.coupleName;
+      document.getElementById('wedding-date-display').textContent = weddingConfig.weddingDate;
+      document.getElementById('welcome-message-display').textContent = weddingConfig.welcomeMsg;
+      document.getElementById('modal-pix-key').textContent = weddingConfig.pixKey;
+      document.getElementById('modal-pix-owner-name').textContent = weddingConfig.pixOwner;
+
+      document.getElementById('cfg-couple-name').value = weddingConfig.coupleName;
+      document.getElementById('cfg-wedding-date').value = weddingConfig.weddingDate;
+      document.getElementById('cfg-whatsapp').value = weddingConfig.whatsapp;
+      document.getElementById('cfg-welcome-msg').value = weddingConfig.welcomeMsg;
+      document.getElementById('cfg-pix-key').value = weddingConfig.pixKey;
+      document.getElementById('cfg-pix-name').value = weddingConfig.pixOwner;
+    }
+
+    // Categories UI
+    function renderCategoryFilters() {
+      const categories = ['all', 'Lua de Mel', 'Cozinha', 'Sala & Conforto', 'Experiências', 'Grandes Conquistas'];
+      const container = document.getElementById('category-filters');
+      container.innerHTML = '';
+
+      categories.forEach(cat => {
+        const isActive = currentCategory === cat;
+        const btn = document.createElement('button');
+        btn.onclick = () => filterByCategory(cat);
+        btn.className = `px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 ${isActive
+          ? 'btn-custom text-white shadow-xs'
+          : 'bg-white text-stone-600 hover:text-stone-900 border border-stone-200/80 hover:border-[#81A9D6]'
+          }`;
+
+        if (cat === 'all') {
+          btn.textContent = `✨ Todas as Opções (${registryItems.length})`;
+        } else {
+          const count = registryItems.filter(item => item.category === cat).length;
+          btn.textContent = `${cat} (${count})`;
+        }
+
+        container.appendChild(btn);
+      });
+    }
+
+    function filterByCategory(category) {
+      currentCategory = category;
+      renderCategoryFilters();
+      renderProducts();
+    }
+
+    function handleSearch(val) {
+      searchQuery = val.trim().toLowerCase();
+      renderProducts();
+    }
+
+    function handleSort(val) {
+      sortMode = val;
+      renderProducts();
+    }
+
+    function resetFilters() {
+      searchQuery = '';
+      currentCategory = 'all';
+      document.getElementById('search-input').value = '';
+      document.getElementById('sort-select').value = 'featured';
+      renderCategoryFilters();
+      renderProducts();
+    }
+
+    // Render Product Cards (Always with Photos)
+    function renderProducts() {
+      const grid = document.getElementById('products-grid');
+      const emptyState = document.getElementById('empty-state');
+      grid.innerHTML = '';
+
+      let filtered = registryItems.filter(item => {
+        const matchesCategory = currentCategory === 'all' || item.category === currentCategory;
+        const matchesSearch = item.title.toLowerCase().includes(searchQuery) ||
+          item.desc.toLowerCase().includes(searchQuery) ||
+          item.category.toLowerCase().includes(searchQuery);
+        return matchesCategory && matchesSearch;
+      });
+
+      if (sortMode === 'price-asc') {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (sortMode === 'price-desc') {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (sortMode === 'name-asc') {
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+      } else {
+        filtered.sort((a, b) => a.id - b.id);
+      }
+
+      document.getElementById('items-count').textContent = filtered.length;
+      document.getElementById('hero-total-count').textContent = registryItems.length;
+
+      if (filtered.length === 0) {
+        emptyState.classList.remove('hidden');
+        return;
+      } else {
+        emptyState.classList.add('hidden');
+      }
+
+      filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-2xl border border-stone-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden group hover:-translate-y-1";
+
+        const formattedPrice = item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        const imgUrl = item.image && item.image.trim() !== '' ? item.image : `https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80`;
+
+        card.innerHTML = `
+        <div class="relative w-full h-44 bg-stone-100 overflow-hidden flex items-center justify-center">
+          <img 
+            src="${imgUrl}" 
+            alt="${item.title}" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="w-full h-full hidden items-center justify-center text-4xl bg-[#81A9D6]/10">
+            ${item.icon || '🎁'}
+          </div>
+          <div class="absolute top-2.5 left-2.5">
+            <span class="text-[10px] uppercase font-bold tracking-wider text-[#5D758D] bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-md shadow-2xs border border-[#81A9D6]/20">
+              ${item.category}
+            </span>
+          </div>
+        </div>
+
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="font-bold text-stone-800 text-sm group-hover:text-[#5D758D] transition-colors leading-snug line-clamp-2">
+              ${item.title}
+            </h3>
+            <p class="text-stone-500 text-xs mt-1.5 line-clamp-2 font-normal leading-relaxed">
+              ${item.desc}
+            </p>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-stone-400 block uppercase font-medium">Valor da Cota</span>
+              <span class="text-base font-bold hero-font" style="color: #5D758D;">${formattedPrice}</span>
+            </div>
+            <button 
+              onclick="openGiftModal(${item.id})"
+              class="px-3.5 py-2 btn-custom text-white text-xs font-semibold rounded-xl flex items-center gap-1.5 shadow-xs transition hover:scale-102">
+              <i data-lucide="gift" class="w-3.5 h-3.5 text-white"></i>
+              <span>Presentear</span>
+            </button>
+          </div>
+        </div>
+      `;
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    // Modal Checkout (Pix)
+    function openGiftModal(id) {
+      const item = registryItems.find(i => i.id === id);
+      if (!item) return;
+      activeItemForModal = item;
+
+      document.getElementById('modal-item-title').textContent = item.title;
+      document.getElementById('modal-item-category').textContent = item.category;
+      document.getElementById('modal-item-description').textContent = `"${item.desc}"`;
+      document.getElementById('modal-item-price').textContent = item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      document.getElementById('modal-item-icon').textContent = item.icon || '🎁';
+
+      const modalImg = document.getElementById('modal-item-image');
+      const modalIcon = document.getElementById('modal-item-icon');
+      const imgUrl = item.image && item.image.trim() !== '' ? item.image : `https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80`;
+
+      modalImg.src = imgUrl;
+      modalImg.classList.remove('hidden');
+      modalIcon.classList.add('hidden');
+
+      const pixPayload = generatePixPayload(weddingConfig.pixKey, weddingConfig.pixOwner, item.price);
+      const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(pixPayload)}`;
+      document.getElementById('pix-qr-image').src = qrApiUrl;
+
+      document.getElementById('guest-message').value = '';
+      document.getElementById('gift-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeGiftModal() {
+      document.getElementById('gift-modal').classList.add('hidden');
+      activeItemForModal = null;
+    }
+
+    // Pix Key & Copia-e-Cola Clipboard
+    function copyPixKey() {
+      copyTextToClipboard(weddingConfig.pixKey);
+      showToast("Chave Pix copiada com sucesso!");
+    }
+
+    function copyPixCopiaECola() {
+      if (!activeItemForModal) return;
+      const payload = generatePixPayload(weddingConfig.pixKey, weddingConfig.pixOwner, activeItemForModal.price);
+      copyTextToClipboard(payload);
+
+      const btnText = document.getElementById('btn-copy-code-text');
+      const oldText = btnText.textContent;
+      btnText.textContent = "Código Pix Copiado!";
+      showToast("Código Copia e Cola copiado!");
+      setTimeout(() => {
+        btnText.textContent = oldText;
+      }, 2500);
+    }
+
+    function copyTextToClipboard(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+      } catch (err) { }
+      document.body.removeChild(textarea);
+    }
+
+    // Send WhatsApp notification
+    function sendCongratulationWhatsApp() {
+      if (!activeItemForModal) return;
+      const msg = document.getElementById('guest-message').value.trim();
+      const itemTitle = activeItemForModal.title;
+      const formattedPrice = activeItemForModal.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+      let text = `Olá Brenda & Robson! 🎉\n\nAcabei de escolher presentear vocês com a cota: *${itemTitle}* (${formattedPrice}) através da lista de casamento de vocês!`;
+      if (msg) {
+        text += `\n\nMeu recado carinhoso:\n"${msg}"`;
+      }
+      text += `\n\nQue Deus abençoe imensamente essa união linda!`;
+
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${weddingConfig.whatsapp.replace(/\D/g, '')}&text=${encodeURIComponent(text)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // Monogram 5-click easter-egg to open admin
+    function handleMonogramClick() {
+      monogramClickCount++;
+      clearTimeout(monogramClickTimer);
+      monogramClickTimer = setTimeout(() => {
+        monogramClickCount = 0;
+      }, 1800);
+
+      if (monogramClickCount >= 5) {
+        monogramClickCount = 0;
+        openAuthModal();
+      }
+    }
+
+    // Auth & Password Handling
+    function openAuthModal() {
+      if (sessionStorage.getItem('wedding_admin_authenticated') === 'true') {
+        openAdminPanel();
+        return;
+      }
+      document.getElementById('admin-pass-input').value = '';
+      document.getElementById('auth-error-msg').classList.add('hidden');
+      document.getElementById('auth-modal').classList.remove('hidden');
+      document.getElementById('admin-pass-input').focus();
+      lucide.createIcons();
+    }
+
+    function closeAuthModal() {
+      document.getElementById('auth-modal').classList.add('hidden');
+      document.getElementById('auth-error-msg').classList.add('hidden');
+    }
+
+    function checkAdminPassword() {
+      const inputPass = document.getElementById('admin-pass-input').value.trim();
+      const currentHash = localStorage.getItem('wedding_admin_hash_v2');
+      const inputHash = computeSimpleHash(inputPass);
+
+      if (inputHash === currentHash || inputPass === DEFAULT_PASS) {
+        sessionStorage.setItem('wedding_admin_authenticated', 'true');
+        closeAuthModal();
+        openAdminPanel();
+        showToast("Bem-vindos ao Painel dos Noivos!");
+      } else {
+        document.getElementById('auth-error-msg').classList.remove('hidden');
+      }
+    }
+
+    function emergencyResetPassword() {
+      localStorage.setItem('wedding_admin_hash_v2', computeSimpleHash(DEFAULT_PASS));
+      showToast("Senha redefinida para 'noivos123' com sucesso!");
+      document.getElementById('admin-pass-input').value = DEFAULT_PASS;
+      document.getElementById('auth-error-msg').classList.add('hidden');
+    }
+
+    function changeAdminPassword() {
+      const p1 = document.getElementById('new-password-input').value.trim();
+      const p2 = document.getElementById('confirm-password-input').value.trim();
+
+      if (p1.length < 4) {
+        showToast("A senha precisa ter pelo menos 4 caracteres!");
+        return;
+      }
+      if (p1 !== p2) {
+        showToast("As senhas não coincidem!");
+        return;
+      }
+
+      localStorage.setItem('wedding_admin_hash_v2', computeSimpleHash(p1));
+      document.getElementById('new-password-input').value = '';
+      document.getElementById('confirm-password-input').value = '';
+      showToast("Senha alterada com sucesso!");
+    }
+
+    // Admin Panel Actions
+    function openAdminPanel() {
+      renderAdminItemsList();
+      switchAdminTab('items');
+      document.getElementById('admin-panel-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeAdminPanel() {
+      document.getElementById('admin-panel-modal').classList.add('hidden');
+    }
+
+    function logoutAdmin() {
+      sessionStorage.removeItem('wedding_admin_authenticated');
+      closeAdminPanel();
+      showToast("Você saiu do painel dos noivos.");
+    }
+
+    function switchAdminTab(tab) {
+      const tabs = ['items', 'general', 'publish', 'security'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`admin-tab-btn-${t}`);
+        const content = document.getElementById(`admin-tab-${t}`);
+        if (t === tab) {
+          btn.className = 'py-3 px-4 border-b-2 border-[#81A9D6] text-[#5D758D] font-bold transition flex items-center gap-1.5';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'py-3 px-4 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition flex items-center gap-1.5';
+          content.classList.add('hidden');
+        }
+      });
+      lucide.createIcons();
+    }
+
+    // Admin Items List (CRUD) with Photos
+    function renderAdminItemsList() {
+      const container = document.getElementById('admin-items-list-container');
+      container.innerHTML = '';
+
+      let totalReceived = 0;
+      document.getElementById('admin-item-count').textContent = registryItems.length;
+
+      registryItems.forEach(item => {
+        totalReceived += (item.receivedCount || 0);
+        const row = document.createElement('div');
+        row.className = "p-3.5 bg-white hover:bg-stone-50 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs";
+
+        const priceStr = item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        const imgUrl = item.image && item.image.trim() !== '' ? item.image : `https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80`;
+
+        row.innerHTML = `
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg overflow-hidden border border-stone-200 shrink-0 bg-stone-100 flex items-center justify-center">
+            <img src="${imgUrl}" alt="${item.title}" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <span class="hidden text-base">${item.icon || '🎁'}</span>
+          </div>
+          <div>
+            <div class="font-bold text-stone-800 text-xs">${item.title}</div>
+            <div class="text-[11px] text-stone-500">
+              ${item.category} &bull; <strong style="color: #5D758D;">${priceStr}</strong> &bull; 
+              <span class="text-stone-600">Cotas recebidas: <strong>${item.receivedCount || 0}</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-1.5 self-end sm:self-center">
+          <button onclick="adjustItemReceived(${item.id}, 1)" title="Adicionar cota recebida" class="px-2 py-1 rounded bg-stone-100 hover:bg-stone-200 text-stone-700 font-bold transition">
+            +1
+          </button>
+          <button onclick="adjustItemReceived(${item.id}, -1)" title="Diminuir cota recebida" class="px-2 py-1 rounded bg-stone-100 hover:bg-stone-200 text-stone-700 font-bold transition">
+            -1
+          </button>
+          <button onclick="openItemModal(${item.id})" class="px-2.5 py-1.5 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-lg font-medium transition flex items-center gap-1">
+            <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
+            <span>Editar</span>
+          </button>
+          <button onclick="deleteItem(${item.id})" class="px-2.5 py-1.5 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg font-medium transition flex items-center gap-1">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+            <span>Excluir</span>
+          </button>
+        </div>
+      `;
+        container.appendChild(row);
+      });
+
+      document.getElementById('admin-received-count').textContent = totalReceived;
+      lucide.createIcons();
+    }
+
+    function adjustItemReceived(id, delta) {
+      const item = registryItems.find(i => i.id === id);
+      if (item) {
+        item.receivedCount = Math.max(0, (item.receivedCount || 0) + delta);
+        saveRegistryItems();
+        renderAdminItemsList();
+      }
+    }
+
+    // Single Item Create/Edit Modal
+    function openItemModal(id) {
+      const isEdit = id !== null;
+      document.getElementById('item-form-title').textContent = isEdit ? "Editar Presente" : "Novo Presente";
+      document.getElementById('item-form-id').value = isEdit ? id : "";
+
+      if (isEdit) {
+        const item = registryItems.find(i => i.id === id);
+        if (!item) return;
+        document.getElementById('item-form-name').value = item.title;
+        document.getElementById('item-form-category').value = item.category;
+        document.getElementById('item-form-icon').value = item.icon || '🎁';
+        document.getElementById('item-form-image').value = item.image || '';
+        document.getElementById('item-form-price').value = item.price;
+        document.getElementById('item-form-desc').value = item.desc;
+        document.getElementById('item-form-received-count').value = item.receivedCount || 0;
+      } else {
+        document.getElementById('item-form-name').value = '';
+        document.getElementById('item-form-category').value = 'Lua de Mel';
+        document.getElementById('item-form-icon').value = '🎁';
+        document.getElementById('item-form-image').value = '';
+        document.getElementById('item-form-price').value = '';
+        document.getElementById('item-form-desc').value = '';
+        document.getElementById('item-form-received-count').value = 0;
+      }
+
+      document.getElementById('item-form-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeItemModal() {
+      document.getElementById('item-form-modal').classList.add('hidden');
+    }
+
+    function saveItemFromModal() {
+      const idVal = document.getElementById('item-form-id').value;
+      const title = document.getElementById('item-form-name').value.trim();
+      const category = document.getElementById('item-form-category').value;
+      const icon = document.getElementById('item-form-icon').value.trim() || '🎁';
+      const image = document.getElementById('item-form-image').value.trim();
+      const price = parseFloat(document.getElementById('item-form-price').value);
+      const desc = document.getElementById('item-form-desc').value.trim();
+      const receivedCount = parseInt(document.getElementById('item-form-received-count').value) || 0;
+
+      if (!title || isNaN(price) || price <= 0) {
+        showToast("Preencha o título e um valor válido!");
+        return;
+      }
+
+      if (idVal) {
+        const item = registryItems.find(i => i.id === parseInt(idVal));
+        if (item) {
+          item.title = title;
+          item.category = category;
+          item.icon = icon;
+          item.image = image;
+          item.price = price;
+          item.desc = desc;
+          item.receivedCount = receivedCount;
+        }
+      } else {
+        const newId = registryItems.length > 0 ? Math.max(...registryItems.map(i => i.id)) + 1 : 1;
+        registryItems.unshift({
+          id: newId,
+          title,
+          category,
+          icon,
+          image,
+          price,
+          desc,
+          receivedCount
+        });
+      }
+
+      saveRegistryItems();
+      closeItemModal();
+      renderAdminItemsList();
+      renderCategoryFilters();
+      renderProducts();
+      showToast("Presente salvo com sucesso!");
+    }
+
+    function deleteItem(id) {
+      if (confirm("Tem certeza de que deseja excluir este presente?")) {
+        registryItems = registryItems.filter(i => i.id !== id);
+        saveRegistryItems();
+        renderAdminItemsList();
+        renderCategoryFilters();
+        renderProducts();
+        showToast("Presente removido com sucesso!");
+      }
+    }
+
+    function resetToDefault50() {
+      if (confirm("Deseja restaurar as opções padrões?")) {
+        registryItems = JSON.parse(JSON.stringify(initial50Items));
+        saveRegistryItems();
+        renderAdminItemsList();
+        renderCategoryFilters();
+        renderProducts();
+        showToast("Presentes originais restaurados!");
+      }
+    }
+
+    // Save General Settings
+    function saveGeneralConfig() {
+      weddingConfig.coupleName = document.getElementById('cfg-couple-name').value.trim() || "Brenda & Robson";
+      weddingConfig.weddingDate = document.getElementById('cfg-wedding-date').value.trim();
+      weddingConfig.whatsapp = document.getElementById('cfg-whatsapp').value.trim();
+      weddingConfig.welcomeMsg = document.getElementById('cfg-welcome-msg').value.trim();
+      weddingConfig.pixKey = document.getElementById('cfg-pix-key').value.trim();
+      weddingConfig.pixOwner = document.getElementById('cfg-pix-name').value.trim();
+
+      localStorage.setItem('wedding_registry_config_v2', JSON.stringify(weddingConfig));
+      applyConfigToUI();
+      showToast("Configurações salvas com sucesso!");
+    }
+
+    function saveRegistryItems() {
+      localStorage.setItem('wedding_registry_items_v2', JSON.stringify(registryItems));
+    }
+
+    // Download Updated Standalone HTML
+    function downloadUpdatedHTMLFile() {
+      let fullHtml = document.documentElement.outerHTML;
+
+      const serializedItems = JSON.stringify(registryItems, null, 2);
+      const serializedConfig = JSON.stringify(weddingConfig, null, 2);
+
+      fullHtml = fullHtml.replace(/const initial50Items = \[[\s\S]*?\];/, `const initial50Items = ${serializedItems};`);
+      fullHtml = fullHtml.replace(/let weddingConfig = \{[\s\S]*?\};/, `let weddingConfig = ${serializedConfig};`);
+
+      const blob = new Blob(["<!DOCTYPE html>\n" + fullHtml], { type: 'text/html;charset=utf-8' });
+      const downloadUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = downloadUrl;
+      a.download = "index.html";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(downloadUrl);
+
+      showToast("Arquivo index.html atualizado baixado com sucesso!");
+    }
+
+    function exportDataBackup() {
+      const exportObject = {
+        config: weddingConfig,
+        items: registryItems,
+        exportedAt: new Date().toISOString()
+      };
+      const blob = new Blob([JSON.stringify(exportObject, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = "backup-casamento-brenda-robson.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast("Backup baixado com sucesso!");
+    }
+
+    // Toast Notification helper
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toast-message');
+      text.textContent = message;
+      toast.classList.remove('translate-y-[-120%]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-[-120%]', 'opacity-0');
+      }, 3000);
+    }
+
+    // Start on load
+    window.onload = function () {
+      initializeRegistry();
+    };
+  </script>
+</body>
+
+</html>
